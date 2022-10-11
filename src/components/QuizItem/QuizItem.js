@@ -1,3 +1,4 @@
+import { EyeIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import Option from "../Option/Option";
 import "./QuizItem.css";
@@ -14,6 +15,7 @@ const QuizItem = ({ question, idx }) => {
           <Option key={index} option={option} idx={index} id={id} correctAnswer={correctAnswer}></Option>
         ))}
       </div>
+      <EyeIcon onClick={() => alert(`Correct Answer: ${correctAnswer}`)} className="eye-icon"></EyeIcon>
     </div>
   );
 };

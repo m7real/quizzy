@@ -2,8 +2,6 @@ import React from "react";
 import "./Option.css";
 
 const Option = ({ option, index, id, correctAnswer }) => {
-  //   console.log(option);
-  //   console.log(id, idx);
   const handleCorrectCheck = () => {
     option === correctAnswer ? alert("Correct Answer") : alert("Wrong Answer");
   };
