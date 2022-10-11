@@ -1,10 +1,14 @@
 import { EyeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { toast } from "react-toastify";
 import Option from "../Option/Option";
+import "react-toastify/dist/ReactToastify.css";
 import "./QuizItem.css";
 
 const QuizItem = ({ question, idx }) => {
   const { id, question: qn, options, correctAnswer } = question;
+  const notify = () => toast(`Correct Answer: ${correctAnswer}`);
+
   return (
     <div className="quiz">
       <p className="quiz-title">
@@ -15,7 +19,7 @@ const QuizItem = ({ question, idx }) => {
           <Option key={index} option={option} idx={index} id={id} correctAnswer={correctAnswer}></Option>
         ))}
       </div>
-      <EyeIcon onClick={() => alert(`Correct Answer: ${correctAnswer}`)} className="eye-icon"></EyeIcon>
+      <EyeIcon onClick={notify} className="eye-icon"></EyeIcon>
     </div>
   );
 };
