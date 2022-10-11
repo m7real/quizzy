@@ -10,8 +10,8 @@ const QuizItem = ({ question, idx }) => {
         Quiz {idx + 1}. {`${qn.slice(3, -4)}`}
       </p>
       <div className="options-container">
-        {options.map((option) => (
-          <Option key={option} option={option}></Option>
+        {options.map((option, index) => (
+          <Option key={index} option={option} idx={index} id={id} correctAnswer={correctAnswer}></Option>
         ))}
       </div>
     </div>

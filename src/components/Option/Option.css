@@ -1,0 +1,8 @@
+.option {
+  border: 1px solid #ffe7f2;
+  border-radius: 15px;
+  padding: 20px;
+}
+.option:hover {
+  background-color: #ffecf4;
+}

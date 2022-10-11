@@ -8,7 +8,7 @@ const Quiz = () => {
   console.log(quizes);
   return (
     <div>
-      <h2 className="quiz-title">Quiz of {quizes.name}</h2>
+      <h2 className="topic-title">Quiz of {quizes.name}</h2>
       {quizes.questions.map((question, idx) => (
         <QuizItem key={question.id} question={question} idx={idx}></QuizItem>
       ))}

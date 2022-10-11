@@ -1,11 +1,19 @@
 import React from "react";
+import "./Option.css";
 
-const Option = ({ option }) => {
-  console.log(option);
+const Option = ({ option, index, id, correctAnswer }) => {
+  //   console.log(option);
+  //   console.log(id, idx);
+  const handleCorrectCheck = () => {
+    option === correctAnswer ? alert("Correct Answer") : alert("Wrong Answer");
+  };
   return (
-    <div>
-      <p>{option}</p>
-    </div>
+    <label htmlFor={index}>
+      <div className="option">
+        <input onClick={handleCorrectCheck} type="radio" name={id} id={index} />
+        {option}
+      </div>
+    </label>
   );
 };
 
