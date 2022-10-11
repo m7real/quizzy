@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import "./Topic.css";
 
 const Topic = ({ topic }) => {
@@ -15,6 +16,7 @@ const Topic = ({ topic }) => {
       <p>Quiz: {total}</p>
       <button onClick={handleNavigate} className="btn-start">
         Start Solving
+        <ArrowRightIcon className="start-icon"></ArrowRightIcon>
       </button>
     </div>
   );

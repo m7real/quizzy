@@ -1,0 +1,18 @@
+.quiz {
+  text-align: left;
+  border: 2px solid green;
+  border-radius: 10px;
+  max-width: 50vw;
+  margin: 30px auto;
+  padding: 20px;
+}
+.quiz-title {
+  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+}
+.options-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}

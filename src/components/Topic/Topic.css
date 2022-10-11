@@ -16,8 +16,16 @@
   width: 100%;
   padding: 10px 15px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-start:hover {
   background-color: rgb(160, 154, 154);
   cursor: pointer;
+}
+.start-icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
 }
