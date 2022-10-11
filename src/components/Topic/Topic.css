@@ -8,3 +8,16 @@
 .topic img {
   width: 100%;
 }
+.btn-start {
+  background-color: rgb(117, 117, 117);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.btn-start:hover {
+  background-color: rgb(160, 154, 154);
+  cursor: pointer;
+}
