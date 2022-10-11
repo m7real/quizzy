@@ -1,0 +1,40 @@
+.cover {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cover-left {
+  background: linear-gradient(45deg, #ffe7f2, whitesmoke);
+  color: gray;
+  width: 40vw;
+  height: 300px;
+  border-radius: 20px 0 0 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover-right {
+  background-color: whitesmoke;
+  width: 40vw;
+  border-radius: 0 20px 0px 0;
+}
+.cover-right img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .cover {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cover-left {
+    width: 80vw;
+    border-radius: 0;
+  }
+
+  .cover-right {
+    width: 80vw;
+    border-radius: 20px 20px 0 0;
+  }
+}

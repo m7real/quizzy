@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Blogs from "./components/Blogs/Blogs";
+import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import Statistics from "./components/Statistics/Statistics";
@@ -21,8 +21,8 @@ function App() {
           element: <Statistics></Statistics>,
         },
         {
-          path: "blogs",
-          element: <Blogs></Blogs>,
+          path: "blog",
+          element: <Blog></Blog>,
         },
       ],
     },

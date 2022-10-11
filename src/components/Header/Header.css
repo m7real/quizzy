@@ -1,4 +1,28 @@
-.nav a {
+.nav-container {
+  background-color: #e5f0ff;
+  color: #1a88ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-container a {
+  color: #1a88ff;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+.nav-container a:hover {
+  color: #3ebdff;
+}
+.nav-items {
+  margin-left: 40vw;
+}
+
+@media only screen and (max-width: 549px) {
+  .nav-container a {
+    margin-right: 10px;
+  }
+  .nav-items {
+    margin-left: 0;
+  }
 }
