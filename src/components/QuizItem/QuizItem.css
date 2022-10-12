@@ -27,3 +27,11 @@
 .eye-icon:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .quiz {
+    max-width: 80vw;
+  }
+  .options-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
