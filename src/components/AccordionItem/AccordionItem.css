@@ -1,0 +1,37 @@
+.faq {
+  background: linear-gradient(135deg, #ffe7f2, #e5f0ff);
+  border: 1px solid rgb(235, 232, 232);
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 0 3px 0 rgb(128, 128, 128);
+}
+
+.faq-q {
+  cursor: pointer;
+  position: relative;
+}
+
+.collapse-arrow {
+  position: absolute;
+  right: 30px;
+}
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+@media only screen and(min-width:550px) and (max-width: 768px) {
+  .collapse-arrow {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .collapse-arrow {
+    right: 10px;
+  }
+}
