@@ -1,0 +1,29 @@
+.not-found {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ffe7f2, whitesmoke);
+  padding-top: 10%;
+  color: gray;
+}
+.not-found h1 {
+  font-size: 4em;
+  color: #121212;
+
+  text-shadow: 0 2px 1px #747474, -1px 3px 1px #767676, -2px 5px 1px #787878, -3px 7px 1px #7a7a7a, -4px 9px 1px #7f7f7f, -5px 11px 1px #838383,
+    -6px 13px 1px #878787, -7px 15px 1px #8a8a8a;
+}
+
+.not-found p {
+  width: fit-content;
+  background-color: rgb(117, 117, 117);
+  color: white;
+  margin: 30px auto;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.not-found p:hover {
+  background-color: rgb(160, 154, 154);
+}
+.not-found a {
+  text-decoration: none;
+}

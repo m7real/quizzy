@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Blog from "./components/Blog/Blog";
-import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import Quiz from "./components/Quiz/Quiz";
 import Statistics from "./components/Statistics/Statistics";
 import Main from "./layouts/Main";
 import { ToastContainer } from "react-toastify";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -39,7 +39,7 @@ function App() {
     },
     {
       path: "*",
-      element: <ErrorPage></ErrorPage>,
+      element: <NotFoundPage></NotFoundPage>,
     },
   ]);
   return (
